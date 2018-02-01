@@ -6,6 +6,27 @@ This fork has been altered to support deploying to an Openshift 2 DIY solution, 
 that I needed for part of my PhD research. It has an `.openshift` directory with `action_hooks`,
 and changed several files to support data persistence to the `OPENSHIFT_DATA_DIR` directories.
 
+To install it to openshift 2:
+
+1. Create a Do-it-yourself cartridge in your project
+
+2. Clone the application directory in e.g. `brat-deployed`.
+
+3. Clone this directory in e.g. `brat-openshift`.
+
+4. Copy and paste folders `diy` from `brat-openshift` to `brat-deployed`
+
+5. `cd` to `brat-deployed/diy` and run `sh install.sh -u`. Follow the instructions.
+
+6. In `brat-deployed/diy` execute `git add config.py -f`.
+
+7. In `brat-deployed` execute `git push`. Wait until the application is deployed.
+
+8. Ssh to your openshift application and run: `mkdir $OPENSHIFT_DATA_DIR/{data,work}` and find a way to copy your
+data there. I have a second github repository holding the data and pulling them to my application using `git clone`.
+
+<b> Since I have not a free slot in our openshift server to try this one, please open an issue if something is wrongn and I will help you. </b>
+
 ## Documentation ##
 
 In an attempt to keep all user-facing documentation in one place, please visit
