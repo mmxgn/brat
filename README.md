@@ -16,7 +16,7 @@ To install it to openshift 2:
 
 4. Copy and paste folders `diy` from `brat-openshift` to `brat-deployed`
 
-5. `cd` to `brat-deployed/diy` and run `sh install.sh -u`. Follow the instructions.
+5. `cd` to `brat-deployed/diy` and execute `cp config_template.py config.py`. Edit `config.py`.
 
 6. In `brat-deployed/diy` execute `git add config.py -f`.
 
