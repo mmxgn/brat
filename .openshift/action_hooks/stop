@@ -1,10 +1,11 @@
 #!/bin/bash
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
-# The logic to stop your application should be put in this script.
+# Stop standalone.py
+
 if [ -z "$(ps -ef | grep standalone.py | grep -v grep)" ]
 then
-    client_result "Application is already stopped"
+	client_result "Application is already stopped"
 else
-    kill `ps -ef | grep standalone.py | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
+	kill `ps -ef | grep standalone.py | grep -v grep | awk '{ print $2 }' > /dev/null 2>&1
 fi
