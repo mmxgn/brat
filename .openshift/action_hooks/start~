@@ -1,3 +1,0 @@
-#!/bin/bash
-
-nohup $OPENSHIFT_REPO_DIR/diy/standalone.py |& /usr/bin/logshifter -tag standalone&
