@@ -144,3 +144,6 @@ them on CC since their responsibilities and availability may vary:
 * Goran Topić       &lt;goran_topic nii ac jp&gt;
 * Sampo Pyysalo     &lt;sampo.pyysalo gmail com&gt;
 * Pontus Stenetorp  &lt;pontus stenetorp se&gt;
+
+For this fork:
+* Emmanouil Theofanos Chourdakis &lt;e.t.chourdakis qmul ac uk&gt;
