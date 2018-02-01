@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bash $OPENSHIFT_REPO_DIR/diy/install.sh -u

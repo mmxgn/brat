@@ -1,5 +1,11 @@
 # brat rapid annotation tool (brat) #
 
+## Changes from nlplab/brat
+
+This fork has been altered to support deploying to an Openshift 2 DIY solution, something
+that I needed for part of my PhD research. It has an `.openshift` directory with `action_hooks`,
+and changed several files to support data persistence to the `OPENSHIFT_DATA_DIR` directories.
+
 ## Documentation ##
 
 In an attempt to keep all user-facing documentation in one place, please visit
