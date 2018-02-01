@@ -61,7 +61,7 @@ import os
 
 _VERBOSE_HANDLER = False
 _DEFAULT_SERVER_ADDR = os.environ['OPENSHIFT_DIY_IP']
-_DEFAULT_SERVER_PORT = os.environ['OPENSHIFT_DIY_PORT']
+_DEFAULT_SERVER_PORT = int(os.environ['OPENSHIFT_DIY_PORT'])
 
 _PERMISSIONS = """
 Allow: /ajax.cgi
